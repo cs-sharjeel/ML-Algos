@@ -6,7 +6,6 @@ Created on Tue Oct 20 17:50:46 2020
 """
 
 
-
 # DBSCAN cluster the data set on the basis of density!
 import pandas as pd
 import numpy as np
@@ -39,8 +38,4 @@ clusters= len(set(labels))- (1 if -1 in labels else 0) #i.e 9 clusters form 0 to
 
 #based on the avg mean of the points that are noisy with the indicated points of group clusters
 print(metrics.silhouette_score(X,labels))
-
-
-
-
 
